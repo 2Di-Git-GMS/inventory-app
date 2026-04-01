@@ -1,0 +1,112 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#0B1F3A"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0B2B4A"/>
+      <stop offset="100%" stop-color="#0A2238"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#06101F" flood-opacity="0.55"/>
+    </filter>
+    <style>
+      .title { font: 600 18px "Segoe UI", Arial, sans-serif; fill: #E2E8F0; }
+      .label { font: 500 12px "Segoe UI", Arial, sans-serif; fill: #94A3B8; }
+      .value { font: 700 22px "Segoe UI", Arial, sans-serif; fill: #F8FAFC; }
+      .small { font: 500 11px "Segoe UI", Arial, sans-serif; fill: #64748B; }
+      .nav { font: 600 13px "Segoe UI", Arial, sans-serif; fill: #CBD5E1; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="720" fill="url(#bg)"/>
+
+  <!-- Sidebar -->
+  <rect x="32" y="28" width="180" height="664" rx="18" fill="url(#panel)" filter="url(#shadow)"/>
+  <text x="56" y="70" class="title">Inventory</text>
+  <rect x="56" y="92" width="120" height="4" rx="2" fill="#22D3EE"/>
+  <text x="56" y="140" class="nav">Dashboard</text>
+  <text x="56" y="170" class="nav" opacity="0.6">Products</text>
+  <text x="56" y="200" class="nav" opacity="0.6">Suppliers</text>
+  <text x="56" y="230" class="nav" opacity="0.6">Orders</text>
+  <text x="56" y="260" class="nav" opacity="0.6">Reports</text>
+  <text x="56" y="290" class="nav" opacity="0.6">Settings</text>
+
+  <!-- Top bar -->
+  <rect x="236" y="28" width="932" height="64" rx="16" fill="#0C2A47" filter="url(#shadow)"/>
+  <text x="260" y="66" class="title">Dashboard Overview</text>
+  <rect x="940" y="42" width="200" height="36" rx="10" fill="#0F3559"/>
+  <text x="958" y="65" class="label">Search items…</text>
+  <circle cx="1130" cy="60" r="14" fill="#22D3EE"/>
+
+  <!-- KPI cards -->
+  <rect x="236" y="112" width="218" height="120" rx="16" fill="#0E2F50" filter="url(#shadow)"/>
+  <text x="256" y="146" class="label">Total Items</text>
+  <text x="256" y="178" class="value">12,450</text>
+  <text x="256" y="206" class="small">+4.2% this month</text>
+
+  <rect x="470" y="112" width="218" height="120" rx="16" fill="#0E2F50" filter="url(#shadow)"/>
+  <text x="490" y="146" class="label">Low Stock</text>
+  <text x="490" y="178" class="value" fill="#FDE68A">184</text>
+  <text x="490" y="206" class="small">Needs reorder</text>
+
+  <rect x="704" y="112" width="218" height="120" rx="16" fill="#0E2F50" filter="url(#shadow)"/>
+  <text x="724" y="146" class="label">Outbound</text>
+  <text x="724" y="178" class="value">3,210</text>
+  <text x="724" y="206" class="small">Last 7 days</text>
+
+  <rect x="938" y="112" width="230" height="120" rx="16" fill="#0E2F50" filter="url(#shadow)"/>
+  <text x="958" y="146" class="label">Revenue</text>
+  <text x="958" y="178" class="value">$82,940</text>
+  <text x="958" y="206" class="small">+12.8% MoM</text>
+
+  <!-- Main chart -->
+  <rect x="236" y="252" width="600" height="280" rx="16" fill="#0E2F50" filter="url(#shadow)"/>
+  <text x="258" y="284" class="title">Inventory Movement</text>
+  <text x="258" y="308" class="label">Last 30 days</text>
+  <line x1="260" y1="484" x2="810" y2="484" stroke="#1E293B" stroke-width="2"/>
+  <line x1="260" y1="440" x2="810" y2="440" stroke="#1E293B" stroke-width="2"/>
+  <line x1="260" y1="396" x2="810" y2="396" stroke="#1E293B" stroke-width="2"/>
+  <line x1="260" y1="352" x2="810" y2="352" stroke="#1E293B" stroke-width="2"/>
+  <path d="M260 460 C 310 420, 360 430, 410 390 C 460 350, 510 360, 560 330 C 610 300, 660 320, 710 290 C 760 260, 790 270, 810 250" stroke="#22D3EE" stroke-width="4" fill="none"/>
+  <path d="M260 470 C 310 460, 360 470, 410 440 C 460 410, 510 430, 560 410 C 610 390, 660 400, 710 380 C 760 360, 790 370, 810 360" stroke="#34D399" stroke-width="3" fill="none"/>
+
+  <!-- Right panel -->
+  <rect x="854" y="252" width="314" height="280" rx="16" fill="#0E2F50" filter="url(#shadow)"/>
+  <text x="876" y="284" class="title">Top Categories</text>
+  <rect x="876" y="312" width="270" height="12" rx="6" fill="#1F2937"/>
+  <rect x="876" y="312" width="210" height="12" rx="6" fill="#22D3EE"/>
+  <text x="876" y="336" class="label">Electronics</text>
+
+  <rect x="876" y="360" width="270" height="12" rx="6" fill="#1F2937"/>
+  <rect x="876" y="360" width="160" height="12" rx="6" fill="#60A5FA"/>
+  <text x="876" y="384" class="label">Household</text>
+
+  <rect x="876" y="408" width="270" height="12" rx="6" fill="#1F2937"/>
+  <rect x="876" y="408" width="120" height="12" rx="6" fill="#FDE68A"/>
+  <text x="876" y="432" class="label">Office</text>
+
+  <rect x="876" y="456" width="270" height="12" rx="6" fill="#1F2937"/>
+  <rect x="876" y="456" width="90" height="12" rx="6" fill="#F97316"/>
+  <text x="876" y="480" class="label">Spare Parts</text>
+
+  <!-- Table -->
+  <rect x="236" y="552" width="932" height="140" rx="16" fill="#0E2F50" filter="url(#shadow)"/>
+  <text x="258" y="584" class="title">Recent Stock Alerts</text>
+  <text x="258" y="612" class="label">Item</text>
+  <text x="620" y="612" class="label">SKU</text>
+  <text x="820" y="612" class="label">Stock</text>
+  <text x="980" y="612" class="label">Status</text>
+
+  <rect x="258" y="626" width="890" height="1" fill="#1F2937"/>
+  <text x="258" y="652" class="label">Printer Ink</text>
+  <text x="620" y="652" class="label">PR-8801</text>
+  <text x="820" y="652" class="label">12</text>
+  <text x="980" y="652" class="label" fill="#FDE68A">Low</text>
+
+  <text x="258" y="680" class="label">HDMI Cable</text>
+  <text x="620" y="680" class="label">CB-1132</text>
+  <text x="820" y="680" class="label">0</text>
+  <text x="980" y="680" class="label" fill="#F87171">Out</text>
+</svg>

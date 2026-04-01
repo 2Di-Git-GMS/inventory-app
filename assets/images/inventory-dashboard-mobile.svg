@@ -1,0 +1,110 @@
+<svg width="1080" height="1920" viewBox="0 0 1080 1920" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#0B1F3A"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#06101F" flood-opacity="0.55"/>
+    </filter>
+    <style>
+      .title { font: 600 20px "Segoe UI", Arial, sans-serif; fill: #E2E8F0; }
+      .label { font: 500 13px "Segoe UI", Arial, sans-serif; fill: #94A3B8; }
+      .value { font: 700 24px "Segoe UI", Arial, sans-serif; fill: #F8FAFC; }
+      .small { font: 500 12px "Segoe UI", Arial, sans-serif; fill: #64748B; }
+      .pill { font: 600 12px "Segoe UI", Arial, sans-serif; fill: #0F172A; }
+    </style>
+  </defs>
+
+  <rect width="1080" height="1920" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <rect x="48" y="48" width="984" height="92" rx="20" fill="#0C2A47" filter="url(#shadow)"/>
+  <text x="80" y="104" class="title">Inventory Dashboard</text>
+  <rect x="820" y="68" width="184" height="52" rx="14" fill="#22D3EE"/>
+  <text x="848" y="103" class="pill">Search</text>
+
+  <!-- KPI Cards -->
+  <rect x="48" y="168" width="984" height="120" rx="18" fill="#0E2F50" filter="url(#shadow)"/>
+  <text x="80" y="208" class="label">Total Items</text>
+  <text x="80" y="246" class="value">12,450</text>
+  <text x="300" y="246" class="small">+4.2% this month</text>
+
+  <rect x="48" y="308" width="984" height="120" rx="18" fill="#0E2F50" filter="url(#shadow)"/>
+  <text x="80" y="348" class="label">Low Stock</text>
+  <text x="80" y="386" class="value" fill="#FDE68A">184</text>
+  <text x="300" y="386" class="small">Needs reorder</text>
+
+  <rect x="48" y="448" width="984" height="120" rx="18" fill="#0E2F50" filter="url(#shadow)"/>
+  <text x="80" y="488" class="label">Outbound</text>
+  <text x="80" y="526" class="value">3,210</text>
+  <text x="300" y="526" class="small">Last 7 days</text>
+
+  <rect x="48" y="588" width="984" height="120" rx="18" fill="#0E2F50" filter="url(#shadow)"/>
+  <text x="80" y="628" class="label">Revenue</text>
+  <text x="80" y="666" class="value">$82,940</text>
+  <text x="300" y="666" class="small">+12.8% MoM</text>
+
+  <!-- Chart -->
+  <rect x="48" y="736" width="984" height="360" rx="18" fill="#0E2F50" filter="url(#shadow)"/>
+  <text x="80" y="778" class="title">Inventory Movement</text>
+  <text x="80" y="804" class="label">Last 30 days</text>
+  <line x1="80" y1="1040" x2="968" y2="1040" stroke="#1E293B" stroke-width="2"/>
+  <line x1="80" y1="980" x2="968" y2="980" stroke="#1E293B" stroke-width="2"/>
+  <line x1="80" y1="920" x2="968" y2="920" stroke="#1E293B" stroke-width="2"/>
+  <line x1="80" y1="860" x2="968" y2="860" stroke="#1E293B" stroke-width="2"/>
+  <path d="M80 1020 C 170 960, 260 980, 350 900 C 440 820, 530 860, 620 800 C 710 740, 800 780, 900 720 C 940 690, 954 700, 968 690" stroke="#22D3EE" stroke-width="4" fill="none"/>
+  <path d="M80 1035 C 170 1010, 260 1030, 350 980 C 440 930, 530 960, 620 930 C 710 900, 800 920, 900 890 C 940 875, 954 880, 968 872" stroke="#34D399" stroke-width="3" fill="none"/>
+
+  <!-- Top Categories -->
+  <rect x="48" y="1124" width="984" height="260" rx="18" fill="#0E2F50" filter="url(#shadow)"/>
+  <text x="80" y="1166" class="title">Top Categories</text>
+  <rect x="80" y="1196" width="920" height="14" rx="7" fill="#1F2937"/>
+  <rect x="80" y="1196" width="720" height="14" rx="7" fill="#22D3EE"/>
+  <text x="80" y="1224" class="label">Electronics</text>
+
+  <rect x="80" y="1248" width="920" height="14" rx="7" fill="#1F2937"/>
+  <rect x="80" y="1248" width="560" height="14" rx="7" fill="#60A5FA"/>
+  <text x="80" y="1276" class="label">Household</text>
+
+  <rect x="80" y="1300" width="920" height="14" rx="7" fill="#1F2937"/>
+  <rect x="80" y="1300" width="420" height="14" rx="7" fill="#FDE68A"/>
+  <text x="80" y="1328" class="label">Office</text>
+
+  <!-- Alerts -->
+  <rect x="48" y="1412" width="984" height="420" rx="18" fill="#0E2F50" filter="url(#shadow)"/>
+  <text x="80" y="1454" class="title">Recent Stock Alerts</text>
+
+  <text x="80" y="1488" class="label">Item</text>
+  <text x="520" y="1488" class="label">SKU</text>
+  <text x="760" y="1488" class="label">Stock</text>
+  <text x="900" y="1488" class="label">Status</text>
+
+  <rect x="80" y="1504" width="920" height="1" fill="#1F2937"/>
+  <text x="80" y="1540" class="label">Printer Ink</text>
+  <text x="520" y="1540" class="label">PR-8801</text>
+  <text x="760" y="1540" class="label">12</text>
+  <text x="900" y="1540" class="label" fill="#FDE68A">Low</text>
+
+  <text x="80" y="1584" class="label">HDMI Cable</text>
+  <text x="520" y="1584" class="label">CB-1132</text>
+  <text x="760" y="1584" class="label">0</text>
+  <text x="900" y="1584" class="label" fill="#F87171">Out</text>
+
+  <text x="80" y="1628" class="label">Label Printer</text>
+  <text x="520" y="1628" class="label">LP-5520</text>
+  <text x="760" y="1628" class="label">7</text>
+  <text x="900" y="1628" class="label" fill="#FDE68A">Low</text>
+
+  <text x="80" y="1672" class="label">Packing Tape</text>
+  <text x="520" y="1672" class="label">PT-0321</text>
+  <text x="760" y="1672" class="label">3</text>
+  <text x="900" y="1672" class="label" fill="#FDE68A">Low</text>
+  
+  <!-- Bottom nav -->
+  <rect x="48" y="1848" width="984" height="48" rx="16" fill="#0C2A47" filter="url(#shadow)"/>
+  <circle cx="170" cy="1872" r="8" fill="#22D3EE"/>
+  <circle cx="430" cy="1872" r="8" fill="#1F2937"/>
+  <circle cx="690" cy="1872" r="8" fill="#1F2937"/>
+  <circle cx="950" cy="1872" r="8" fill="#1F2937"/>
+</svg>
